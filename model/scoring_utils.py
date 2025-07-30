@@ -126,7 +126,6 @@ def get_clip_score(scores, clip, metadata_np, metadata, per_frame_scores_root, a
     scores_zeros = np.ones(clip_gt.shape[0]) * np.inf
     clip_person_scores_dict = {i: np.copy(scores_zeros) for i in (clip_fig_idxs or [0])}
 
-    # === 加载 CIL 权重 ===
     if args.use_cil:
         cil_config = {
             'ShanghaiTech': {

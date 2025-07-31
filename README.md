@@ -9,6 +9,8 @@ After downloading, simply place the corresponding data into the predefined direc
 
 To simplify the process, we have already included all necessary files for **HR-UBnormal** within the dataset package.
 
+---
+
 ## Testing
 
 We have provided the pre-trained weights within the downloaded package.  
@@ -16,5 +18,4 @@ Once the dataset is downloaded and the required environment is set up, you can d
 
 ```bash
 python eval.py --dataset [ShanghaiTech, ShanghaiTech-HR, UBnormal, UBnormal-HR] \
-               --checkpoint ./checkpoints/[dataset_name]/[checkpoint_file].pth.tar
-
+               --checkpoint ./checkpoints/[Shangahitech or UBnormal]/[checkpoint_file].pth.tar
